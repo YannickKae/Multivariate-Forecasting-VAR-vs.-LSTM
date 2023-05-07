@@ -1,17 +1,17 @@
 # Multivariate Time Series Forecasting with LSTM and VAR Models
 
-In this project, we explore two different approaches to forecasting multivariate time series data, using the Value, Momentum, Carry, and Defensive factors as examples. We compare the performance of a **Multivariate LSTM** model and a **Vector Autoregression (VAR)** model.
+In this project, we explore two different approaches to forecasting multivariate time series data, using the Value, Momentum, Carry, and Defensive factors as examples. We compare the performance of a **Multivariate LSTM** model (5 output neurons) and a **Vector Autoregression (VAR)** model.
 
-## Data Preparation
+## Data
 
-The dataset contains monthly returns of the four factors:
+The monthly return data used in this analysis are from the paper [How Do Factor Premia Vary Over Time? A Century of Evidence](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3400998) by Ilmanen et al. (2019). It explores the following four factor strategies across liquid asset classes:
 
 1. Value
 2. Momentum
 3. Carry
 4. Defensive
 
-![Cumulative Performance of Factors](./Cumulative Performance of Factors.png)
+![Cumulative Performance of Factors](Cumulative%20Performance%20of%20Factors.png)
 
 ## Models
 
@@ -21,7 +21,7 @@ We first applied a VAR model for forecasting the factors. We followed these step
 
 1. Test for stationarity using the Augmented Dickey-Fuller (ADF) test.
 2. Fit the VAR model with an optimal lag order, determined by minimizing the BIC.
-3. Analyze the model output, including impulse response functions and forecast error variance decomposition.
+3. Analyze the model output.
 4. Forecast the factors using the fitted model.
 5. Evaluate the forecast accuracy using the Mean Absolute Percentage Error (MAPE).
 
