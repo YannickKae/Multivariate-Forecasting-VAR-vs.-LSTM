@@ -38,16 +38,12 @@ Next, I applied a Multivariate LSTM model for forecasting the factors. We follow
 7. Evaluate the forecast accuracy using the Mean Absolute Percentage Error (MAPE).
 
 ## Results
-
-I compared the MAPE of the LSTM and VAR models for each factor. The results were as follows:
-
-- Value: LSTM (0.8390) vs. VAR (0.8861)
-- Momentum: LSTM (0.8975) vs. VAR (0.8803)
-- Carry: LSTM (1.2852) vs. VAR (1.2089)
-- Defensive: LSTM (0.9684) vs. VAR (1.1312)
-
-In general, the forecast accuracy for both models was relatively poor. The Multivariate LSTM model performed better for Value and Defensive factors, while the VAR model performed better for Momentum and Carry factors.
+![MAPE Comparison](MAPE%20Comparison.png)
 
 ## Conclusion
 
-Both the Multivariate LSTM and VAR models have their strengths and weaknesses, and neither model provided consistently accurate forecasts across all factors. Further research and model tuning may be necessary to improve the forecast accuracy for these factors. Additionally, other models, such as Bayesian structural time series models or machine learning algorithms like XGBoost, could be explored to find a more suitable forecasting approach for this dataset.
+The forecast accuracy for both models was relatively poor. The Multivariate LSTM model performed better for Value and Defensive factors, while the VAR model performed better for Momentum and Carry factors.
+Ultimately, the differences in performance are marginal, leading us to go with Occam's Razor and select the simpler model, i.e., the VAR. The fact that a more complex model, like LSTM, does not significantly improve the results could suggest that the features, i.e. past returns, may not be a reliable predictor of future returns, a notion commonly accepted in the field.
+
+**Garbage in, garbage out.**
+**You can't math your way out of no alpha.**
