@@ -27,13 +27,13 @@ I first applied a VAR model for forecasting the factors, following these steps:
 
 ### Multivariate LSTM
 
-Next, I applied a Multivariate LSTM model for forecasting the factorsfollowing these steps:
+Next, I applied a Multivariate LSTM model for forecasting the factors, following these steps:
 
 1. Scale the dataset using the MinMaxScaler.
 2. Split the dataset into training and testing sets.
 3. Reshape the input data into a 3D array format for the LSTM model.
 4. Create and train an LSTM model with Conv1D, Dropout, and Dense layers.
-5. (Optional) Perform hyperparameter tuning with 10-fold cross-validation and RandomizedSearchCV.
+5. Perform hyperparameter tuning with 10-fold cross-validation and RandomizedSearchCV.
 6. Forecast the factors using the fitted model.
 7. Evaluate the forecast accuracy using the Mean Absolute Percentage Error (MAPE).
 
