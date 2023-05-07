@@ -1,6 +1,6 @@
 # Multivariate Time Series Forecasting: VAR vs. LSTM
 
-In this project, we explore two different approaches to forecasting multivariate time series data, using the Value, Momentum, Carry, and Defensive factors as examples. We compare the performance of a **Multivariate LSTM** model (multiple output neurons) and a **Vector Autoregression (VAR)** model.
+In this project, we explore two different approaches to forecasting multivariate time series data, using the Value, Momentum, Carry, and Defensive factors as examples. I compare the performance of a **Multivariate LSTM** model (multiple output neurons) and a **Vector Autoregression (VAR)** model.
 
 ## Data
 
@@ -17,7 +17,7 @@ The monthly return data used in this analysis are from the paper [How Do Factor 
 
 ### Vector Autoregression (VAR)
 
-We first applied a VAR model for forecasting the factors. We followed these steps:
+I first applied a VAR model for forecasting the factors. I followed these steps:
 
 1. Test for stationarity using the Augmented Dickey-Fuller (ADF) test.
 2. Fit the VAR model with an optimal lag order, determined by minimizing the BIC.
@@ -27,7 +27,7 @@ We first applied a VAR model for forecasting the factors. We followed these step
 
 ### Multivariate LSTM
 
-Next, we applied a Multivariate LSTM model for forecasting the factors. We followed these steps:
+Next, I applied a Multivariate LSTM model for forecasting the factors. We followed these steps:
 
 1. Scale the dataset using the MinMaxScaler.
 2. Split the dataset into training and testing sets.
@@ -39,7 +39,7 @@ Next, we applied a Multivariate LSTM model for forecasting the factors. We follo
 
 ## Results
 
-We compared the MAPE of the LSTM and VAR models for each factor. The results were as follows:
+I compared the MAPE of the LSTM and VAR models for each factor. The results were as follows:
 
 - Value: LSTM (0.8390) vs. VAR (0.8861)
 - Momentum: LSTM (0.8975) vs. VAR (0.8803)
