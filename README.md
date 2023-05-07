@@ -1,6 +1,6 @@
 # Multivariate Time Series Forecasting: VAR vs. LSTM
 
-In this project, we explore two different approaches to forecasting multivariate time series data, using the Value, Momentum, Carry, and Defensive factors as examples. We compare the performance of a **Multivariate LSTM** model (5 output neurons) and a **Vector Autoregression (VAR)** model.
+In this project, we explore two different approaches to forecasting multivariate time series data, using the Value, Momentum, Carry, and Defensive factors as examples. We compare the performance of a **Multivariate LSTM** model (multiple output neurons) and a **Vector Autoregression (VAR)** model.
 
 ## Data
 
