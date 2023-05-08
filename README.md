@@ -22,7 +22,7 @@ I first applied a VAR model for forecasting the factors, following these steps:
 1. Test for stationarity using the Augmented Dickey-Fuller (ADF) test.
 2. Fit the VAR model with an optimal lag order, determined by minimizing the BIC.
 3. Analyze the model output.
-4. Forecast the factors using the fitted model.
+4. Forecast the factors' returns using the fitted model.
 5. Evaluate the forecast accuracy using the Mean Absolute Percentage Error (MAPE).
 
 ### Multivariate LSTM
