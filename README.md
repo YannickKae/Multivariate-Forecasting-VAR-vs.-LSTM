@@ -17,7 +17,7 @@ The monthly return data used in this analysis are from the paper [How Do Factor 
 
 ### Vector Autoregression (VAR)
 
-I first applied a VAR model for forecasting the factors, following these steps:
+I first applied a VAR model for forecasting the factors' returns, following these steps:
 
 1. Test for stationarity using the Augmented Dickey-Fuller (ADF) test.
 2. Fit the VAR model with an optimal lag order, determined by minimizing the BIC.
@@ -27,7 +27,7 @@ I first applied a VAR model for forecasting the factors, following these steps:
 
 ### Multivariate LSTM
 
-Next, I applied a Multivariate LSTM model for forecasting the factors, following these steps:
+Next, I applied a Multivariate LSTM model for forecasting the factors' returns, following these steps:
 
 1. Scale the dataset using the MinMaxScaler.
 2. Split the dataset into training and testing sets.
