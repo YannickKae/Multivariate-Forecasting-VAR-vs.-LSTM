@@ -46,4 +46,4 @@ The forecast accuracy for both models was relatively poor. The Multivariate LSTM
 Ultimately, the differences in performance were marginal, leading me to go with Occam's Razor and select the simpler model, i.e., the VAR. The fact that a more complex model, like LSTM, did not significantly improve the results could suggest that the features, i.e. past returns, may not be a reliable predictor of future returns, a notion commonly accepted in the field.
 
 **Garbage in, garbage out.**
-**You can't math your way out of no alpha.**
+**You can't math noise into signal.**
