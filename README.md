@@ -32,9 +32,9 @@ Next, I applied a Multivariate LSTM model for forecasting the factors' returns, 
 1. Scale the dataset using the MinMaxScaler.
 2. Split the dataset into training and testing sets.
 3. Reshape the input data into a 3D array format for the LSTM model.
-4. Create and train an LSTM model with Conv1D, Dropout, and Dense layers.
+4. Create an LSTM model with Conv1D, Dropout, and Dense layers.
 5. Perform hyperparameter tuning with 10-fold cross-validation and RandomizedSearchCV.
-6. Forecast the factors' returns using the fitted model.
+6. Train the model and forecast the factors' returns using it.
 7. Evaluate the forecast accuracy using the Mean Absolute Percentage Error (MAPE).
 
 ## Results
